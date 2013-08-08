@@ -12,6 +12,51 @@
 		8A5022091794389900381CD6 /* GBAdvancedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5022081794389900381CD6 /* GBAdvancedTableViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8A502215179438A900381CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A50220F179438A900381CD6 /* GBToolbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8AD911B1162D9E2200C9D287;
+			remoteInfo = "GBToolbox-iOS";
+		};
+		8A502217179438A900381CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A50220F179438A900381CD6 /* GBToolbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8A0C4E34165FA60C00A990FB;
+			remoteInfo = "GBToolboxUnitTests-iOS";
+		};
+		8A502219179438A900381CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A50220F179438A900381CD6 /* GBToolbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8A0377FB16BFCD2F0096C448;
+			remoteInfo = "GBToolbox-OSX";
+		};
+		8AD431561794392F00EE9F66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AD431521794392F00EE9F66 /* ODRefreshControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8A5021BB1794377000381CD6;
+			remoteInfo = ODRefreshControl;
+		};
+		8AD431581794397500EE9F66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A50220F179438A900381CD6 /* GBToolbox.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AD911B0162D9E2200C9D287;
+			remoteInfo = "GBToolbox-iOS";
+		};
+		8AD4315A1794397700EE9F66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AD431521794392F00EE9F66 /* ODRefreshControl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A5021BA1794377000381CD6;
+			remoteInfo = ODRefreshControl;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		8A5021FC1794389900381CD6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -31,6 +76,8 @@
 		8A5022051794389900381CD6 /* GBAdvancedTableViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GBAdvancedTableViewController-Prefix.pch"; sourceTree = "<group>"; };
 		8A5022061794389900381CD6 /* GBAdvancedTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBAdvancedTableViewController.h; sourceTree = "<group>"; };
 		8A5022081794389900381CD6 /* GBAdvancedTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBAdvancedTableViewController.m; sourceTree = "<group>"; };
+		8A50220F179438A900381CD6 /* GBToolbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GBToolbox.xcodeproj; path = ../../GBToolbox/GBToolbox.xcodeproj; sourceTree = "<group>"; };
+		8AD431521794392F00EE9F66 /* ODRefreshControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ODRefreshControl.xcodeproj; path = "../../../Open Source/ODRefreshControl/ODRefreshControl.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +120,8 @@
 		8A5022031794389900381CD6 /* GBAdvancedTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8A5022061794389900381CD6 /* GBAdvancedTableViewController.h */,
-				8A5022081794389900381CD6 /* GBAdvancedTableViewController.m */,
+				8A50221B179438AC00381CD6 /* Libraries */,
+				8A50221C179438B500381CD6 /* Code */,
 				8A5022041794389900381CD6 /* Supporting Files */,
 			);
 			path = GBAdvancedTableViewController;
@@ -86,6 +133,42 @@
 				8A5022051794389900381CD6 /* GBAdvancedTableViewController-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A502210179438A900381CD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A502216179438A900381CD6 /* libGBToolbox.a */,
+				8A502218179438A900381CD6 /* GBToolboxUnitTests.octest */,
+				8A50221A179438A900381CD6 /* GBToolbox.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A50221B179438AC00381CD6 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				8AD431521794392F00EE9F66 /* ODRefreshControl.xcodeproj */,
+				8A50220F179438A900381CD6 /* GBToolbox.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		8A50221C179438B500381CD6 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				8A5022061794389900381CD6 /* GBAdvancedTableViewController.h */,
+				8A5022081794389900381CD6 /* GBAdvancedTableViewController.m */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		8AD431531794392F00EE9F66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AD431571794392F00EE9F66 /* libODRefreshControl.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +185,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				8AD4315B1794397700EE9F66 /* PBXTargetDependency */,
+				8AD431591794397500EE9F66 /* PBXTargetDependency */,
 			);
 			name = GBAdvancedTableViewController;
 			productName = GBAdvancedTableViewController;
@@ -127,12 +212,54 @@
 			mainGroup = 8A5021F51794389900381CD6;
 			productRefGroup = 8A5021FF1794389900381CD6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8A502210179438A900381CD6 /* Products */;
+					ProjectRef = 8A50220F179438A900381CD6 /* GBToolbox.xcodeproj */;
+				},
+				{
+					ProductGroup = 8AD431531794392F00EE9F66 /* Products */;
+					ProjectRef = 8AD431521794392F00EE9F66 /* ODRefreshControl.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8A5021FD1794389900381CD6 /* GBAdvancedTableViewController */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8A502216179438A900381CD6 /* libGBToolbox.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGBToolbox.a;
+			remoteRef = 8A502215179438A900381CD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8A502218179438A900381CD6 /* GBToolboxUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			name = GBToolboxUnitTests.octest;
+			path = "GBToolboxUnitTests-iOS.octest";
+			remoteRef = 8A502217179438A900381CD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8A50221A179438A900381CD6 /* GBToolbox.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GBToolbox.framework;
+			remoteRef = 8A502219179438A900381CD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8AD431571794392F00EE9F66 /* libODRefreshControl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libODRefreshControl.a;
+			remoteRef = 8AD431561794392F00EE9F66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A5021FA1794389900381CD6 /* Sources */ = {
@@ -144,6 +271,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AD431591794397500EE9F66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GBToolbox-iOS";
+			targetProxy = 8AD431581794397500EE9F66 /* PBXContainerItemProxy */;
+		};
+		8AD4315B1794397700EE9F66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ODRefreshControl;
+			targetProxy = 8AD4315A1794397700EE9F66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8A50220A1794389900381CD6 /* Debug */ = {
@@ -170,7 +310,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				HEADER_SEARCH_PATHS = (
+					"../**",
+					"../../Open\\ Source/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -193,7 +337,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				HEADER_SEARCH_PATHS = (
+					"../**",
+					"../../Open\\ Source/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -242,6 +390,7 @@
 				8A50220E1794389900381CD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
