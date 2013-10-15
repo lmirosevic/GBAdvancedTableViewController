@@ -13,6 +13,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8A23F35A180D3F8900378A99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A23F356180D3F8900378A99 /* ODRefreshControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8A5021BB1794377000381CD6;
+			remoteInfo = ODRefreshControl;
+		};
+		8A23F35C180D3F9500378A99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A23F356180D3F8900378A99 /* ODRefreshControl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A5021BA1794377000381CD6;
+			remoteInfo = ODRefreshControl;
+		};
 		8A502215179438A900381CD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8A50220F179438A900381CD6 /* GBToolbox.xcodeproj */;
@@ -34,26 +48,12 @@
 			remoteGlobalIDString = 8A0377FB16BFCD2F0096C448;
 			remoteInfo = "GBToolbox-OSX";
 		};
-		8AD431561794392F00EE9F66 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8AD431521794392F00EE9F66 /* ODRefreshControl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8A5021BB1794377000381CD6;
-			remoteInfo = ODRefreshControl;
-		};
 		8AD431581794397500EE9F66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8A50220F179438A900381CD6 /* GBToolbox.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 8AD911B0162D9E2200C9D287;
 			remoteInfo = "GBToolbox-iOS";
-		};
-		8AD4315A1794397700EE9F66 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8AD431521794392F00EE9F66 /* ODRefreshControl.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8A5021BA1794377000381CD6;
-			remoteInfo = ODRefreshControl;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -71,13 +71,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A23F356180D3F8900378A99 /* ODRefreshControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ODRefreshControl.xcodeproj; path = "../../../Open Source/ODRefreshControl-wrapper/ODRefreshControl.xcodeproj"; sourceTree = "<group>"; };
 		8A5021FE1794389900381CD6 /* libGBAdvancedTableViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGBAdvancedTableViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5022011794389900381CD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8A5022051794389900381CD6 /* GBAdvancedTableViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GBAdvancedTableViewController-Prefix.pch"; sourceTree = "<group>"; };
 		8A5022061794389900381CD6 /* GBAdvancedTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBAdvancedTableViewController.h; sourceTree = "<group>"; };
 		8A5022081794389900381CD6 /* GBAdvancedTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBAdvancedTableViewController.m; sourceTree = "<group>"; };
 		8A50220F179438A900381CD6 /* GBToolbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GBToolbox.xcodeproj; path = ../../GBToolbox/GBToolbox.xcodeproj; sourceTree = "<group>"; };
-		8AD431521794392F00EE9F66 /* ODRefreshControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ODRefreshControl.xcodeproj; path = "../../../Open Source/ODRefreshControl/ODRefreshControl.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A23F357180D3F8900378A99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A23F35B180D3F8900378A99 /* libODRefreshControl.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8A5021F51794389900381CD6 = {
 			isa = PBXGroup;
 			children = (
@@ -139,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				8A502216179438A900381CD6 /* libGBToolbox.a */,
-				8A502218179438A900381CD6 /* GBToolboxUnitTests.octest */,
+				8A502218179438A900381CD6 /* GBToolboxUnitTests-iOS.octest */,
 				8A50221A179438A900381CD6 /* GBToolbox.framework */,
 			);
 			name = Products;
@@ -148,7 +156,7 @@
 		8A50221B179438AC00381CD6 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				8AD431521794392F00EE9F66 /* ODRefreshControl.xcodeproj */,
+				8A23F356180D3F8900378A99 /* ODRefreshControl.xcodeproj */,
 				8A50220F179438A900381CD6 /* GBToolbox.xcodeproj */,
 			);
 			name = Libraries;
@@ -161,14 +169,6 @@
 				8A5022081794389900381CD6 /* GBAdvancedTableViewController.m */,
 			);
 			name = Code;
-			sourceTree = "<group>";
-		};
-		8AD431531794392F00EE9F66 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8AD431571794392F00EE9F66 /* libODRefreshControl.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +185,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				8AD4315B1794397700EE9F66 /* PBXTargetDependency */,
+				8A23F35D180D3F9500378A99 /* PBXTargetDependency */,
 				8AD431591794397500EE9F66 /* PBXTargetDependency */,
 			);
 			name = GBAdvancedTableViewController;
@@ -218,8 +218,8 @@
 					ProjectRef = 8A50220F179438A900381CD6 /* GBToolbox.xcodeproj */;
 				},
 				{
-					ProductGroup = 8AD431531794392F00EE9F66 /* Products */;
-					ProjectRef = 8AD431521794392F00EE9F66 /* ODRefreshControl.xcodeproj */;
+					ProductGroup = 8A23F357180D3F8900378A99 /* Products */;
+					ProjectRef = 8A23F356180D3F8900378A99 /* ODRefreshControl.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -230,6 +230,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		8A23F35B180D3F8900378A99 /* libODRefreshControl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libODRefreshControl.a;
+			remoteRef = 8A23F35A180D3F8900378A99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		8A502216179438A900381CD6 /* libGBToolbox.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -237,10 +244,9 @@
 			remoteRef = 8A502215179438A900381CD6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8A502218179438A900381CD6 /* GBToolboxUnitTests.octest */ = {
+		8A502218179438A900381CD6 /* GBToolboxUnitTests-iOS.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			name = GBToolboxUnitTests.octest;
 			path = "GBToolboxUnitTests-iOS.octest";
 			remoteRef = 8A502217179438A900381CD6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -250,13 +256,6 @@
 			fileType = wrapper.framework;
 			path = GBToolbox.framework;
 			remoteRef = 8A502219179438A900381CD6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8AD431571794392F00EE9F66 /* libODRefreshControl.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libODRefreshControl.a;
-			remoteRef = 8AD431561794392F00EE9F66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -273,15 +272,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8A23F35D180D3F9500378A99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ODRefreshControl;
+			targetProxy = 8A23F35C180D3F9500378A99 /* PBXContainerItemProxy */;
+		};
 		8AD431591794397500EE9F66 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GBToolbox-iOS";
 			targetProxy = 8AD431581794397500EE9F66 /* PBXContainerItemProxy */;
-		};
-		8AD4315B1794397700EE9F66 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ODRefreshControl;
-			targetProxy = 8AD4315A1794397700EE9F66 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
